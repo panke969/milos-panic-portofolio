@@ -47,6 +47,36 @@ footer{padding:50px 0;color:var(--muted);font-size:13px;display:flex;justify-con
 .concept-badge{display:inline-block;margin-bottom:12px;border-left:2px solid var(--accent);padding:5px 8px;background:#11161a;color:var(--muted);font-size:10px;letter-spacing:1.3px}
 
 @media(max-width:700px){.nav-links{display:none}.grid{grid-template-columns:1fr}.case-grid{grid-template-columns:1fr 1fr}.photo-placeholder{height:150px}.hero h1{font-size:55px}section{padding:70px 0}footer{display:block}}
+
+.mobile-quicknav{display:none}
+@media(max-width:700px){
+nav{position:sticky}
+.nav{padding:14px 16px}
+.logo{font-size:18px}
+main{padding:0 16px}
+.hero{min-height:auto;padding:100px 0 50px}
+.hero p{font-size:17px;max-width:100%}
+.buttons{flex-direction:column;align-items:stretch}
+.btn{width:100%;text-align:center;padding:15px 18px}
+.mobile-quicknav{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 6px}
+.mobile-quicknav a{flex:1 1 calc(50% - 10px);min-width:120px;padding:12px 14px;border:1px solid var(--line);text-decoration:none;color:var(--muted);font-size:12px;letter-spacing:1px;text-align:center;background:rgba(255,255,255,.01)}
+.card{padding:22px}
+.project-photo,.photo-placeholder,.maintenance-visual,.concept-visual{height:150px}
+.case-study{padding:22px}
+.timeline{padding-left:20px}
+.job:before{left:-26px}
+.job ul{padding-left:18px}
+footer{padding:35px 0 45px}
+}
+@media(max-width:420px){
+main{padding:0 14px}
+.hero h1{font-size:44px}
+h2{font-size:30px}
+.card h3{font-size:21px}
+.mobile-quicknav a{flex:1 1 100%}
+.techline span,.tag{font-size:9px}
+}
+
 </style>
 </head>
 <body>
@@ -59,6 +89,12 @@ footer{padding:50px 0;color:var(--muted);font-size:13px;display:flex;justify-con
 <h1>MILOŠ<br><span>PANIĆ</span></h1>
 <p>Mechatronics Engineer focused on automation, complex machinery, field engineering and machine development.</p>
 <div class="buttons"><a class="btn primary" href="#projects">VIEW PROJECTS</a><a class="btn" href="Milos_Panic_CV.pdf" target="_blank" rel="noopener noreferrer">DOWNLOAD CV</a><a class="btn" href="#contact">CONTACT</a></div>
+<div class="mobile-quicknav">
+<a href="#projects">PROJECTS</a>
+<a href="#experience">EXPERIENCE</a>
+<a href="#skills">SKILLS</a>
+<a href="#contact">CONTACT</a>
+</div>
 </div>
 </section>
 
