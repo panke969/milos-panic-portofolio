@@ -27,6 +27,12 @@ footer{padding:50px 0;color:var(--muted);font-size:13px;display:flex;justify-con
 .techline{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}
 .techline span{font-size:10px;letter-spacing:1.2px;border:1px solid var(--line);padding:5px 8px;color:#aab5bd}
 
+
+.project-photo{height:190px;margin:-28px -28px 24px;border-bottom:1px solid var(--line);overflow:hidden;background:#0b0e11}
+.project-photo img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.78) contrast(1.04)}
+.project-card-link{color:var(--accent);font-size:11px;letter-spacing:1.8px;font-weight:700;text-decoration:none;display:inline-block;margin-top:18px}
+.project-card-link:hover{color:var(--text)}
+
 @media(max-width:700px){.nav-links{display:none}.grid{grid-template-columns:1fr}.case-grid{grid-template-columns:1fr 1fr}.photo-placeholder{height:150px}.hero h1{font-size:55px}section{padding:70px 0}footer{display:block}}
 </style>
 </head>
@@ -47,7 +53,13 @@ footer{padding:50px 0;color:var(--muted);font-size:13px;display:flex;justify-con
 <div class="section-label">01 / SELECTED WORK</div><h2>Engineering Projects</h2>
 <p style="max-width:760px;color:var(--muted);margin-top:-18px;margin-bottom:35px">A visual engineering portfolio built around real problems, engineering decisions, integration, testing and results. Project imagery will be added as the portfolio develops.</p>
 <div class="grid">
-<div class="card"><div class="photo-placeholder">PROJECT IMAGE / MACHINE PHOTO</div><h3>Industrial Machine Retrofit</h3><p>Mechanical, electrical and automation integration for industrial machinery, from troubleshooting through commissioning and technical documentation.</p><span class="tag">MECHATRONICS</span><span class="tag">PLC</span><span class="tag">SERVO</span><span class="tag">COMMISSIONING</span></div>
+<div class="card">
+<div class="project-photo"><a href="projects/industrial-machine-retrofit.html"><img src="assets/retrofit/servo-drives.jpg" alt="Industrial machine retrofit electrical and servo system assessment"></a></div>
+<h3>Industrial Machine Retrofit</h3>
+<p>Cross-disciplinary reliability and controls retrofit covering mechanical condition, electrical systems, EtherCAT / servo connectivity, IPC modernization, safety and validation planning.</p>
+<span class="tag">MECHATRONICS</span><span class="tag">BECKHOFF</span><span class="tag">RELIABILITY</span><span class="tag">RETROFIT</span>
+<br><a class="project-card-link" href="projects/industrial-machine-retrofit.html">VIEW CASE STUDY →</a>
+</div>
 <div class="card"><div class="photo-placeholder">PROJECT IMAGE / SERVICE PACKAGE</div><h3>Maintenance in the Box</h3><p>Development of a structured service package and aftermarket documentation designed to support machine reliability, maintainability and long-term serviceability.</p><span class="tag">RELIABILITY</span><span class="tag">SERVICE</span><span class="tag">DOCUMENTATION</span></div>
 <div class="card"><div class="photo-placeholder">PROJECT IMAGE / AUTOMATION</div><h3>Automation & Robotics</h3><p>Hands-on engineering involving industrial automation, robotics, sensors, machine vision and motion systems.</p><span class="tag">ROBOTICS</span><span class="tag">VISION</span><span class="tag">MOTION</span><span class="tag">CONTROL</span></div>
 <div class="card"><div class="photo-placeholder">PROJECT IMAGE / PRODUCTION</div><h3>Production Engineering</h3><p>Practical engineering improvements involving tools, fixtures, machine optimization, production support and continuous improvement.</p><span class="tag">LEAN</span><span class="tag">KAIZEN</span><span class="tag">POKAYOKE</span><span class="tag">OPTIMIZATION</span></div>
