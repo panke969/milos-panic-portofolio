@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Engineering case study: industrial machine reliability and controls retrofit assessment by Miloš Panić.">
+<title>Industrial Machine Retrofit | Miloš Panić</title>
+<style>
+:root{--bg:#0b0e11;--panel:#12171c;--line:#273039;--text:#e8edf1;--muted:#96a2ad;--accent:#d6a85c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.07;background-image:linear-gradient(rgba(255,255,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:48px 48px}
+nav{position:fixed;top:0;width:100%;z-index:10;background:rgba(11,14,17,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{max-width:1120px;margin:auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center}.logo{font-weight:800;letter-spacing:2px}.logo span{color:var(--accent)}
+.nav a{color:var(--muted);text-decoration:none;font-size:13px;letter-spacing:1px}.nav a:hover{color:var(--text)}
+main{max-width:1120px;margin:auto;padding:0 24px}
+.hero{padding:150px 0 72px;border-bottom:1px solid var(--line)}
+.eyebrow,.label{color:var(--accent);font-size:11px;letter-spacing:2.6px;font-weight:800}
+h1{font-size:clamp(44px,7vw,78px);line-height:1.02;margin:16px 0 22px;max-width:950px}
+.lead{max-width:790px;color:var(--muted);font-size:19px}
+.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:25px}.tag{font-size:10px;letter-spacing:1.4px;border:1px solid var(--line);padding:6px 9px;color:#b6c0c8}
+.status{display:inline-block;margin-top:20px;padding:7px 10px;border-left:2px solid var(--accent);background:#11161a;color:#c9d1d8;font-size:12px}
+.heroimg{margin-top:42px;height:min(58vw,580px);min-height:320px;border:1px solid var(--line);overflow:hidden}.heroimg img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.78)}
+section{padding:82px 0;border-bottom:1px solid var(--line)}h2{font-size:34px;margin:8px 0 26px}.copy{max-width:820px;color:var(--muted)}
+.four{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}.metric{border-top:1px solid var(--line);padding-top:16px}.metric strong{display:block;color:var(--accent);font-size:11px;letter-spacing:1.7px;margin-bottom:8px}.metric p{margin:0;color:var(--muted);font-size:14px}
+.scope{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.box{background:linear-gradient(145deg,#141a20,#0f1317);border:1px solid var(--line);padding:24px}.box h3{margin:0 0 10px;font-size:19px}.box p{color:var(--muted);margin:0}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.figure{border:1px solid var(--line);background:#101418}.figure img{width:100%;height:340px;object-fit:cover;display:block;filter:saturate(.82)}.caption{padding:14px 16px;color:var(--muted);font-size:13px}.caption strong{color:var(--text)}
+.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:28px}.step{border:1px solid var(--line);padding:16px 12px;min-height:125px}.step b{color:var(--accent);font-size:11px;letter-spacing:1.3px}.step p{font-size:13px;color:var(--muted);margin:9px 0 0}
+.note{border-left:2px solid var(--accent);padding:15px 18px;background:#11161a;color:var(--muted);margin-top:26px;max-width:860px}
+footer{padding:45px 0;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:20px}
+@media(max-width:800px){.four,.flow{grid-template-columns:1fr 1fr}.scope,.gallery{grid-template-columns:1fr}.figure img{height:300px}}
+@media(max-width:520px){.four,.flow{grid-template-columns:1fr}.hero{padding-top:120px}.heroimg{height:330px}h1{font-size:43px}section{padding:60px 0}footer{display:block}}
+</style>
+</head>
+<body>
+<nav><div class="nav"><div class="logo">MP<span>.</span></div><a href="../index.html#projects">← BACK TO PORTFOLIO</a></div></nav>
+<main>
+<header class="hero">
+<div class="eyebrow">ENGINEERING CASE STUDY / INDUSTRIAL RETROFIT</div>
+<h1>Industrial Machine Retrofit — Reliability & Controls Upgrade</h1>
+<p class="lead">A cross-disciplinary engineering assessment and retrofit plan for an ageing automated processing machine affected by mechanical wear, environmental exposure, control-system instability and maintainability issues.</p>
+<div class="tags"><span class="tag">MECHATRONICS</span><span class="tag">FIELD ENGINEERING</span><span class="tag">BECKHOFF / ETHERCAT</span><span class="tag">SERVO SYSTEMS</span><span class="tag">IPC / HMI</span><span class="tag">SAFETY</span><span class="tag">VALIDATION</span></div>
+<div class="status">STATUS · Engineering assessment / retrofit planning — final measured after-results not yet published.</div>
+<div class="heroimg"><img src="../assets/retrofit/servo-drives.jpg" alt="Servo and control components inspected during industrial machine retrofit assessment"></div>
+</header>
+
+<section>
+<div class="label">01 / CHALLENGE</div><h2>Reliability problems across multiple machine disciplines</h2>
+<p class="copy">The machine showed recurring start/stop behaviour, EtherCAT and servo connectivity issues, intermittent IPC freezing, mechanical play and difficult knife-tilt operation, conveyor alignment problems and visible oxidation associated with condensation. The engineering task was therefore not a single-component repair: it required a structured assessment across mechanics, electrical systems, controls, safety, software and serviceability.</p>
+<div class="four">
+<div class="metric"><strong>MECHANICAL</strong><p>Wear, missing bushings, bearing damage, alignment and knife-mechanism issues.</p></div>
+<div class="metric"><strong>ELECTRICAL</strong><p>Oxidation, sealing concerns and potentially compromised connections exposed to moisture.</p></div>
+<div class="metric"><strong>CONTROLS</strong><p>EtherCAT / servo connectivity, IPC stability and planned control-system modernization.</p></div>
+<div class="metric"><strong>MAINTAINABILITY</strong><p>Reliability, future downtime prevention, standardization and easier service intervention.</p></div>
+</div>
+</section>
+
+<section>
+<div class="label">02 / MY ROLE</div><h2>Field assessment, retrofit definition & engineering documentation</h2>
+<p class="copy">My contribution combined hands-on field engineering with structured technical documentation: identifying machine condition and failure points, defining the retrofit scope, preparing a detailed parts/BOM framework, documenting mechanical/electrical/control/safety work packages, and establishing commissioning and validation checks for the upgraded configuration.</p>
+<div class="scope">
+<div class="box"><h3>Machine assessment</h3><p>Inspection of mechanical condition, electrical cabinets, servo/control components, machine safety and environmental damage.</p></div>
+<div class="box"><h3>Retrofit scope</h3><p>Mechanical improvements, electrical renewal, IPC/control modernization, software update and safety-system upgrade.</p></div>
+<div class="box"><h3>Engineering documentation</h3><p>Structured findings, priorities, component planning, work-package definition and final configuration framework.</p></div>
+<div class="box"><h3>Validation planning</h3><p>Pre-power checks, functional testing, safety verification, motor/drive and servo checks, HMI controls and automatic-cycle validation.</p></div>
+</div>
+</section>
+
+<section>
+<div class="label">03 / ENGINEERING FINDINGS</div><h2>Selected field evidence</h2>
+<div class="gallery">
+<div class="figure"><img src="../assets/retrofit/knife-tilt.jpg" alt="Knife tilting mechanism wear"><div class="caption"><strong>Knife-tilt mechanism</strong> · Mechanical wear and play affecting the cutting position.</div></div>
+<div class="figure"><img src="../assets/retrofit/belt-adjustment.jpg" alt="Conveyor belt adjustment mechanism"><div class="caption"><strong>Belt adjustment</strong> · Adjustment hardware identified for improvement to make alignment easier and more repeatable.</div></div>
+<div class="figure"><img src="../assets/retrofit/bearing-wear.jpg" alt="Damaged conveyor bearing"><div class="caption"><strong>Bearing / roller condition</strong> · Mechanical damage and radial movement requiring corrective action.</div></div>
+<div class="figure"><img src="../assets/retrofit/cabinet-sealing.jpg" alt="Electrical cabinet sealing condition"><div class="caption"><strong>Cabinet sealing</strong> · Damaged or corroded sealing/locking areas increasing exposure risk.</div></div>
+<div class="figure"><img src="../assets/retrofit/cooling-system.jpg" alt="Machine water cooling system components"><div class="caption"><strong>Cooling system</strong> · Cooling-system behaviour and valve condition included in the retrofit assessment.</div></div>
+<div class="figure"><img src="../assets/retrofit/condensation-damage.jpg" alt="Environmental and condensation damage on machine components"><div class="caption"><strong>Environmental exposure</strong> · Condition indicating moisture/contamination concerns requiring reliability and hygiene attention.</div></div>
+<div class="figure"><img src="../assets/retrofit/electrical-connection.jpg" alt="Electrical cable connection exposed to moisture"><div class="caption"><strong>Electrical connections</strong> · Cables and connectors exposed to water/condensation identified as potential reliability risks.</div></div>
+<div class="figure"><img src="../assets/retrofit/servo-drives.jpg" alt="Servo drives and EtherCAT control components"><div class="caption"><strong>Servo / EtherCAT system</strong> · Control hardware and communication connections assessed for modernization and reliability.</div></div>
+</div>
+</section>
+
+<section>
+<div class="label">04 / ENGINEERING APPROACH</div><h2>From field condition to validated retrofit</h2>
+<div class="flow">
+<div class="step"><b>01 · INSPECT</b><p>Document the actual machine state and operating complaints.</p></div>
+<div class="step"><b>02 · DIAGNOSE</b><p>Separate mechanical, electrical, control and environmental failure modes.</p></div>
+<div class="step"><b>03 · SCOPE</b><p>Define work packages and modernization targets.</p></div>
+<div class="step"><b>04 · PLAN</b><p>Build the component/BOM and compatibility framework.</p></div>
+<div class="step"><b>05 · RETROFIT</b><p>Execute mechanical, electrical, software and safety changes.</p></div>
+<div class="step"><b>06 · VALIDATE</b><p>Verify startup, safety, I/O, drives, servo, HMI and automatic cycle.</p></div>
+</div>
+</section>
+
+<section>
+<div class="label">05 / VALIDATION FRAMEWORK</div><h2>Verification built into the engineering process</h2>
+<p class="copy">The retrofit documentation defines pre-power verification for mechanical and electrical condition, wiring/connectors, safety circuits, software and parameters. Functional validation then covers machine startup, emergency stop, safety circuits, sensors/I/O, motors and drives, the servo system, HMI/controls and automatic operation. Production/load test fields are included for cycle time, output and fault behaviour.</p>
+<div class="note">The source engineering report is marked as a draft and its final before/after performance fields are not yet populated. This public case study therefore does not claim a measured downtime reduction, cycle-time improvement or completed final acceptance result.</div>
+</section>
+
+<section>
+<div class="label">06 / TRANSFERABLE ENGINEERING VALUE</div><h2>Why this project matters beyond one machine</h2>
+<p class="copy">This project demonstrates the type of systems-level work that transfers directly to high-value equipment in marine, medical, pharma and advanced industrial environments: structured fault finding, cross-discipline integration, modernization of ageing equipment, safety-aware commissioning, validation and technical documentation.</p>
+</section>
+
+<footer><div>© 2026 Miloš Panić</div><div>MECHATRONICS / AUTOMATION / FIELD ENGINEERING</div></footer>
+</main>
+</body>
+</html>
