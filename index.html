@@ -51,6 +51,11 @@ footer{padding:50px 0;color:var(--muted);font-size:13px;display:flex;justify-con
 .warehouse-visual img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.82) contrast(1.03)}
 .warehouse-visual:after{content:"VISUAL MANAGEMENT / PART COMPATIBILITY";position:absolute;left:14px;bottom:12px;background:rgba(11,14,17,.82);border-left:2px solid var(--accent);padding:7px 10px;color:#d5dde3;font-size:9px;letter-spacing:1.4px}
 
+
+.ipc-visual{height:190px;margin:-28px -28px 24px;border-bottom:1px solid var(--line);overflow:hidden;background:#0b0e11;position:relative}
+.ipc-visual img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.78) contrast(1.05)}
+.ipc-visual:after{content:"ROOT CAUSE ANALYSIS / IPC + HMI";position:absolute;left:14px;bottom:12px;background:rgba(11,14,17,.82);border-left:2px solid var(--accent);padding:7px 10px;color:#d5dde3;font-size:9px;letter-spacing:1.4px}
+
 @media(max-width:700px){.nav-links{display:none}.grid{grid-template-columns:1fr}.case-grid{grid-template-columns:1fr 1fr}.photo-placeholder{height:150px}.hero h1{font-size:55px}section{padding:70px 0}footer{display:block}}
 
 .mobile-quicknav{display:none}
@@ -134,7 +139,13 @@ h2{font-size:30px}
 <span class="tag">VISUAL MANAGEMENT</span><span class="tag">POKA-YOKE</span><span class="tag">WAREHOUSE</span><span class="tag">STANDARDIZATION</span>
 <br><a class="project-card-link" href="projects/visual-parts-identification-system.html">VIEW CASE STUDY →</a>
 </div>
-<div class="card"><div class="photo-placeholder">PROJECT IMAGE / TROUBLESHOOTING</div><h3>Technical Troubleshooting</h3><p>Systematic fault finding across mechanical, electrical, controls and software interfaces on complex machinery.</p><span class="tag">DIAGNOSTICS</span><span class="tag">BECKHOFF</span><span class="tag">IPC</span><span class="tag">FIELD SERVICE</span></div>
+<div class="card">
+<div class="ipc-visual"><a href="projects/ipc-hmi-reliability-investigation.html"><img src="assets/ipc/elo-driver-config.jpg" alt="IPC and touchscreen driver configuration during troubleshooting"></a></div>
+<h3>IPC / HMI Reliability Investigation</h3>
+<p>Systematic root-cause analysis of an intermittent industrial touchscreen failure across electrical, mechanical, environmental and software layers.</p>
+<span class="tag">ROOT CAUSE</span><span class="tag">BECKHOFF</span><span class="tag">ELO TOUCH</span><span class="tag">FIELD DIAGNOSTICS</span>
+<br><a class="project-card-link" href="projects/ipc-hmi-reliability-investigation.html">VIEW CASE STUDY →</a>
+</div>
 <div class="card">
 <div class="concept-visual"><div class="concept-flow"><div class="concept-node">TEST OBJECT</div><div class="concept-arrow">→</div><div class="concept-node">DIAGNOSTICS</div><div class="concept-arrow">→</div><div class="concept-node">PASS / FAIL</div></div></div>
 <span class="concept-badge">CONCEPT · NOT YET BUILT</span>
