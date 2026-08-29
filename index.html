@@ -46,6 +46,11 @@ footer{padding:50px 0;color:var(--muted);font-size:13px;display:flex;justify-con
 .concept-arrow{color:var(--accent);font-size:18px}
 .concept-badge{display:inline-block;margin-bottom:12px;border-left:2px solid var(--accent);padding:5px 8px;background:#11161a;color:var(--muted);font-size:10px;letter-spacing:1.3px}
 
+
+.warehouse-visual{height:190px;margin:-28px -28px 24px;border-bottom:1px solid var(--line);overflow:hidden;background:#0b0e11;position:relative}
+.warehouse-visual img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.82) contrast(1.03)}
+.warehouse-visual:after{content:"VISUAL MANAGEMENT / PART COMPATIBILITY";position:absolute;left:14px;bottom:12px;background:rgba(11,14,17,.82);border-left:2px solid var(--accent);padding:7px 10px;color:#d5dde3;font-size:9px;letter-spacing:1.4px}
+
 @media(max-width:700px){.nav-links{display:none}.grid{grid-template-columns:1fr}.case-grid{grid-template-columns:1fr 1fr}.photo-placeholder{height:150px}.hero h1{font-size:55px}section{padding:70px 0}footer{display:block}}
 
 .mobile-quicknav{display:none}
@@ -122,7 +127,13 @@ h2{font-size:30px}
 <br><a class="project-card-link" href="projects/maintenance-in-the-box.html">VIEW CASE STUDY →</a>
 </div>
 <div class="card"><div class="photo-placeholder">PROJECT IMAGE / AUTOMATION</div><h3>Automation & Robotics</h3><p>Hands-on engineering involving industrial automation, robotics, sensors, machine vision and motion systems.</p><span class="tag">ROBOTICS</span><span class="tag">VISION</span><span class="tag">MOTION</span><span class="tag">CONTROL</span></div>
-<div class="card"><div class="photo-placeholder">PROJECT IMAGE / PRODUCTION</div><h3>Production Engineering</h3><p>Practical engineering improvements involving tools, fixtures, machine optimization, production support and continuous improvement.</p><span class="tag">LEAN</span><span class="tag">KAIZEN</span><span class="tag">POKAYOKE</span><span class="tag">OPTIMIZATION</span></div>
+<div class="card">
+<div class="warehouse-visual"><a href="projects/visual-parts-identification-system.html"><img src="assets/warehouse/warehouse-overview.jpg" alt="Warehouse spare parts organized with a visual color-point identification system"></a></div>
+<h3>Visual Parts Identification System</h3>
+<p>Developed and introduced a warehouse color-point standard that makes machine compatibility visible at a glance, including multi-machine parts and legacy-generation identification.</p>
+<span class="tag">VISUAL MANAGEMENT</span><span class="tag">POKA-YOKE</span><span class="tag">WAREHOUSE</span><span class="tag">STANDARDIZATION</span>
+<br><a class="project-card-link" href="projects/visual-parts-identification-system.html">VIEW CASE STUDY →</a>
+</div>
 <div class="card"><div class="photo-placeholder">PROJECT IMAGE / TROUBLESHOOTING</div><h3>Technical Troubleshooting</h3><p>Systematic fault finding across mechanical, electrical, controls and software interfaces on complex machinery.</p><span class="tag">DIAGNOSTICS</span><span class="tag">BECKHOFF</span><span class="tag">IPC</span><span class="tag">FIELD SERVICE</span></div>
 <div class="card">
 <div class="concept-visual"><div class="concept-flow"><div class="concept-node">TEST OBJECT</div><div class="concept-arrow">→</div><div class="concept-node">DIAGNOSTICS</div><div class="concept-arrow">→</div><div class="concept-node">PASS / FAIL</div></div></div>
@@ -273,6 +284,12 @@ A multidisciplinary path across field service, R&D, industrial automation, machi
 <div class="card"><div class="photo-placeholder">PROJECT IMAGE</div><h3>BMW Component Assembly System</h3><p>Designed a fully automated assembly line for multiple part references, increasing efficiency while aligning with Industry 4.0 principles.</p></div>
 <div class="card"><div class="photo-placeholder">PROJECT IMAGE</div><h3>Hirata Japan Technical Support</h3><p>Provided and supported official technical partners for Serbia, Hybrid Bonding specialist for Continental Serbia.</p></div>
 <div class="card"><div class="photo-placeholder">PROJECT IMAGE</div><h3>Heating Pump Quality Control Station</h3><p>Engineered an inspection station for a Danish customer, improving quality control and reducing downtime.</p></div>
+<div class="card">
+<div class="warehouse-visual"><a href="projects/visual-parts-identification-system.html"><img src="assets/warehouse/drawer-overview.jpg" alt="Color-coded warehouse drawer system"></a></div>
+<h3>Visual Parts Identification System</h3>
+<p>Introduced a color-point compatibility standard for spare-parts storage, including multi-color shared parts and a silver legacy-generation indicator.</p>
+<a class="project-card-link" href="projects/visual-parts-identification-system.html">VIEW CASE STUDY →</a>
+</div>
 </div>
 </section>
 
