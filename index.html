@@ -56,6 +56,11 @@ footer{padding:50px 0;color:var(--muted);font-size:13px;display:flex;justify-con
 .ipc-visual img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.78) contrast(1.05)}
 .ipc-visual:after{content:"ROOT CAUSE ANALYSIS / IPC + HMI";position:absolute;left:14px;bottom:12px;background:rgba(11,14,17,.82);border-left:2px solid var(--accent);padding:7px 10px;color:#d5dde3;font-size:9px;letter-spacing:1.4px}
 
+
+.bmw-visual{height:190px;margin:-28px -28px 24px;border-bottom:1px solid var(--line);overflow:hidden;background:#0b0e11;position:relative}
+.bmw-visual img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.82) contrast(1.03)}
+.bmw-visual:after{content:"AUTOMATION / ROBOTICS / RAPID PROTOTYPING";position:absolute;left:14px;bottom:12px;background:rgba(11,14,17,.84);border-left:2px solid var(--accent);padding:7px 10px;color:#d5dde3;font-size:9px;letter-spacing:1.3px}
+
 @media(max-width:700px){.nav-links{display:none}.grid{grid-template-columns:1fr}.case-grid{grid-template-columns:1fr 1fr}.photo-placeholder{height:150px}.hero h1{font-size:55px}section{padding:70px 0}footer{display:block}}
 
 .mobile-quicknav{display:none}
@@ -131,7 +136,13 @@ h2{font-size:30px}
 <span class="tag">RELIABILITY</span><span class="tag">AFTERMARKET</span><span class="tag">MAINTENANCE</span><span class="tag">SERVICE DESIGN</span>
 <br><a class="project-card-link" href="projects/maintenance-in-the-box.html">VIEW CASE STUDY →</a>
 </div>
-<div class="card"><div class="photo-placeholder">PROJECT IMAGE / AUTOMATION</div><h3>Automation & Robotics</h3><p>Hands-on engineering involving industrial automation, robotics, sensors, machine vision and motion systems.</p><span class="tag">ROBOTICS</span><span class="tag">VISION</span><span class="tag">MOTION</span><span class="tag">CONTROL</span></div>
+<div class="card">
+<div class="bmw-visual"><a href="projects/bmw-multi-variant-assembly-cell.html"><img src="assets/bmw/dual-robot-cell.jpg" alt="Dual-robot automated assembly cell with rotary indexing system"></a></div>
+<h3>BMW Multi-Variant Automated Assembly Cell</h3>
+<p>R&D development of a flexible automated assembly system for seven product variants, combining dual-robot handling, rotary indexing, vision-based dimensional inspection and rapid prototyping of fixtures and tooling concepts.</p>
+<span class="tag">ROBOTICS</span><span class="tag">MACHINE VISION</span><span class="tag">RAPID PROTOTYPING</span><span class="tag">INDUSTRY 4.0</span>
+<br><a class="project-card-link" href="projects/bmw-multi-variant-assembly-cell.html">VIEW CASE STUDY →</a>
+</div>
 <div class="card">
 <div class="warehouse-visual"><a href="projects/visual-parts-identification-system.html"><img src="assets/warehouse/warehouse-overview.jpg" alt="Warehouse spare parts organized with a visual color-point identification system"></a></div>
 <h3>Visual Parts Identification System</h3>
@@ -292,7 +303,12 @@ A multidisciplinary path across field service, R&D, industrial automation, machi
 <div class="grid">
 <div class="card"><div class="photo-placeholder">PROJECT IMAGE</div><h3>Maintenance in the Box</h3><p>Created an aftermarket customer-support concept with spare parts, preassembled parts and supporting video/animation material.</p></div>
 
-<div class="card"><div class="photo-placeholder">PROJECT IMAGE</div><h3>BMW Component Assembly System</h3><p>Designed a fully automated assembly line for multiple part references, increasing efficiency while aligning with Industry 4.0 principles.</p></div>
+<div class="card">
+<div class="bmw-visual"><a href="projects/bmw-multi-variant-assembly-cell.html"><img src="assets/bmw/cell-layout.png" alt="CAD layout of multi-variant automated assembly cell"></a></div>
+<h3>BMW Multi-Variant Assembly Cell</h3>
+<p>Flexible robotic assembly, inline vision measurement and rapid-prototype tooling development for seven product variants without hardware changeover.</p>
+<a class="project-card-link" href="projects/bmw-multi-variant-assembly-cell.html">VIEW CASE STUDY →</a>
+</div>
 <div class="card"><div class="photo-placeholder">PROJECT IMAGE</div><h3>Hirata Japan Technical Support</h3><p>Provided and supported official technical partners for Serbia, Hybrid Bonding specialist for Continental Serbia.</p></div>
 <div class="card"><div class="photo-placeholder">PROJECT IMAGE</div><h3>Heating Pump Quality Control Station</h3><p>Engineered an inspection station for a Danish customer, improving quality control and reducing downtime.</p></div>
 <div class="card">
