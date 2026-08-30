@@ -1,0 +1,34 @@
+PORTFOLIO V11 — GRUNDFOS FINAL QC TEST STATION
+
+New completed case study:
+projects/grundfos-final-qc-test-station.html
+
+New assets:
+assets/grundfos/
+  test-station-overview.jpg
+  test-station-front.jpg
+  inspection-layout.jpg
+
+Grundfos case-study highlights:
+- one final-QC station intended for approximately 20 pump variants
+- final verification of assembly completeness
+- checking position/presence of critical components
+- bottom-mounted SensoPart vision camera
+- several precision sensors
+- HMI operator interface
+- multi-variant test-engineering architecture
+- no unsupported performance percentages or confidential QC limits published
+
+Homepage:
+- Grundfos added to Selected Engineering Work
+- old Heating Pump Quality Control placeholder replaced with linked Grundfos case study
+
+All previous projects and folders are preserved.
+
+UPLOAD:
+1. Extract ZIP.
+2. GitHub repository → Add file → Upload files.
+3. Upload the CONTENTS while preserving projects/ and assets/.
+4. Replace existing files.
+5. Commit changes.
+6. Vercel should redeploy automatically.
